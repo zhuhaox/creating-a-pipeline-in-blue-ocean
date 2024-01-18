@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'test-agent-a10'
+    docker {
+      image 'python:2-alpine'
     }
 
   }
